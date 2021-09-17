@@ -11,7 +11,7 @@ pipeline {
             docker {
                 image '192.168.100.12:5000/cuda-operators/cuda-operators-x86-build:v1.0'
                 registryUrl 'http://192.168.100.12:5000'
-                registryCredentialsId 'cudaop-harbor'
+                registryCredentialsId 'harbor'
                 args '--gpus all'
                 reuseNode true
                 }
